@@ -1,0 +1,4 @@
+cd ~/github.com/josephgvariam/mjpg-streamer-code-182/mjpg-streamer
+export LD_LIBRARY_PATH=/home/joppu/github.com/josephgvariam/mjpg-streamer-code-182/mjpg-streamer/
+./mjpg_streamer -i "./input_uvc.so -d /dev/video0 -f 15 -r 320x240" -o "./output_http.so -w ./www -p 8080"
+./mjpg_streamer -i "./input_uvc.so -d /dev/video1 -f 15 -r 320x240" -o "./output_http.so -w ./www -p 8081"
